@@ -29,11 +29,11 @@ interface_bind:                                               # 更具 PB 接口
       agent: true
       queue: true
 
-  Arttask:
-    topic: fmp/cmd/ArtOrders/#
+  ArtTask:
+    topic: fmp/cmd/ArtTask/#
     qos: 1
     callback_agent:
-      art_orders_agent
+      art_task_agent
     consumer_mode:
       agent: true
       queue: true
