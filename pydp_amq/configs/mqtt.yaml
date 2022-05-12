@@ -28,3 +28,13 @@ interface_bind:                                               # 更具 PB 接口
     consumer_mode:
       agent: true
       queue: true
+
+  Arttask:
+    topic: fmp/cmd/ArtOrders/#
+    qos: 1
+    callback_agent:
+      art_orders_agent
+    consumer_mode:
+      agent: true
+      queue: true
+
